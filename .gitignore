@@ -52,9 +52,6 @@ project.assets.json
 Thumbs.db
 .DS_Store
 
-#Solutions folder
-**/AoCHelper/Solutions/*
-
 bin/
 obj/
 /packages/
