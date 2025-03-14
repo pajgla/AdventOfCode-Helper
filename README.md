@@ -11,6 +11,7 @@ This is a very simple program that can help you organize and quickly run C# solu
 You can take a look at the example class <b>SolutionExample</b> to better understand the solution template<br>
 <br>
 Run the <b>AoCHelper</b> program and write year and day of the advent of code problem. For example "2024 11".<br>
+You can also provide an optional third parameter "p" that will enable debug print for your solution! Example: "2024 11 p".<br>
 <br>
 AoCHelper will search for a Solver that has correct year and day set in the Solver attribute.<br>
 <br>
