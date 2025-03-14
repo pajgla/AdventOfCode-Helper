@@ -1,0 +1,62 @@
+# Compiled files
+bin/
+obj/
+out/
+
+# Rider and Visual Studio specific
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/httpRequests/
+.idea/shelf/
+.idea/uiDesigner.xml
+.idea/gradle.xml
+.idea/libraries/
+.idea/dictionaries/
+
+# Rider shared project settings to keep (uncomment if needed)
+#!.idea/misc.xml
+#!.idea/codeStyles/
+!.idea/runConfigurations/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Dotnet Core
+project.lock.json
+project.assets.json
+*.db
+*.db-shm
+*.db-wal
+
+# Logs & Temporary Files
+*.log
+**/logs/
+**/*.bak
+*.tmp
+
+# Resharper
+*_ReSharper.Caches/
+
+# OS-Specific
+Thumbs.db
+.DS_Store
+
+#Solutions folder
+**/AoCHelper/Solutions/*
+
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
