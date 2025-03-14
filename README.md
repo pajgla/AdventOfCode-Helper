@@ -17,7 +17,7 @@ AoCHelper will search for a Solver that has correct year and day set in the Solv
 <h1>How to use BaseSolution method overrides</h1>
 BaseSolution class has 3 abstract methods: Initialize, Reset and Solve.<br>
 <br>
-- <b>Initialize</b>: Used to initialize your solution/program. You will be provided with ESolutionPart enum that you can use to determine which part of the excercise your program will run. If the excercise requires different configurations, you can easily tweak your solution there.<br>
--  <b>Reset</b>: Used to reset your program after one part of the excercise is done. You should reset any member variables from your class, so the values do not get reused in the next part.<br>
+- <b>Initialize</b>: Used to initialize your solution/program. You will be provided with ESolutionPart enum that you can use to determine which part of the exercise your program will run. If the exercise requires different configurations, you can easily tweak your solution there.<br>
+-  <b>Reset</b>: Used to reset your program after one part of the exercise is done. You should reset any member variables from your class, so the values do not get reused in the next part.<br>
 - <b>Solve</b>: Used to solve the problem. You are provided with the input as an argument. At the end, you should return the solution as string.<br>
 - You can also use <b>DebugPrint</b> method which will print debug info if you enable it before starting the solution.<br>
