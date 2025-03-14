@@ -9,7 +9,6 @@ public enum ESolutionPart
 public abstract class BaseSolution
 {
     public abstract void Initialize(ESolutionPart part);
-    public abstract void Reset();
     public abstract string Solve(string input);
     
     protected void DebugPrint(string message)

@@ -15,9 +15,10 @@ public class Program
         }
 
         string[] splitInput = consoleInput.Split(' ');
-        if (splitInput.Length != 2)
+        int splitInputLength = splitInput.Length;
+        if (splitInputLength < 2 || splitInputLength > 3)
         {
-            Console.WriteLine("Invalid input. Terminating the program.");
+            Console.WriteLine("Invalid input count. Provide input as {year} {day} {p:optional}. Terminating the program.");
             return;
         }
 
@@ -33,8 +34,15 @@ public class Program
             Console.WriteLine("Invalid input. Terminating the program.");
             return;
         }
-
-        SolutionRunner.RunSolution(year, day);
+        
+        string? thirdArgument = splitInputLength == 3 ? splitInput[2].ToLower() : null;
+        bool enableDebugPrint = false;
+        if (thirdArgument is not null)
+        {
+            enableDebugPrint = thirdArgument is "p" or "1" or "printdebug";
+        }
+         
+        SolutionRunner.RunSolution(year, day, enableDebugPrint);
         
         //Keep the console open
         Console.WriteLine();

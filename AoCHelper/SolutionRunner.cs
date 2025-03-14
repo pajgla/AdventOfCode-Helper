@@ -6,7 +6,7 @@ using System.Reflection;
 
 public static class SolutionRunner
 {
-    public static void RunSolution(int year, int day)
+    public static void RunSolution(int year, int day, bool enableDebugPrint = false)
     {
         ISolver? solver = FindSolver(year, day);
         if (solver is null)
@@ -20,7 +20,7 @@ public static class SolutionRunner
             return;
         }
         
-        SolveBothParts(solver, input);
+        SolveBothParts(solver, input, enableDebugPrint);
     }
 
     private static string? FindInput(int year, int day)
@@ -51,19 +51,20 @@ public static class SolutionRunner
         return solver;
     }
     
-    private static void SolveBothParts(ISolver solver, string input)
+    private static void SolveBothParts(ISolver solver, string input, bool enableDebugPrint = false)
     {
-        SolvePart(ESolutionPart.PartOne, solver, input);
-        SolvePart(ESolutionPart.PartTwo, solver, input);
+        SolvePart(ESolutionPart.PartOne, solver, input, enableDebugPrint);
+        solver.ResetSolution();
+        SolvePart(ESolutionPart.PartTwo, solver, input, enableDebugPrint);
     }
 
-    private static void SolvePart(ESolutionPart part, ISolver solver, string input)
+    private static void SolvePart(ESolutionPart part, ISolver solver, string input, bool enableDebugPrint = false)
     {
         int partNumber = part == ESolutionPart.PartOne ? 1 : 2;
     
         Console.WriteLine("----------------------------");
         Console.WriteLine($"Executing part {partNumber}...");
-        string output = partNumber == 1 ? solver.SolvePart1(input) : solver.SolvePart2(input);
+        string output = partNumber == 1 ? solver.SolvePart1(input, enableDebugPrint) : solver.SolvePart2(input, enableDebugPrint);
         Console.WriteLine($"Output: {output}");
     }
 }

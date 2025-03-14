@@ -8,10 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d72705fd-5bb8-40a0-8499-5efcb04c7d21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AoCHelper/SolutionExample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AoC Helper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AoC Helper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoCHelper/AoCHelper.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AoCHelper/AoCHelper.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoCHelper/BaseSolution.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AoCHelper/BaseSolution.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoCHelper/ISolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AoCHelper/ISolver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoCHelper/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AoCHelper/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoCHelper/SolutionExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AoCHelper/SolutionExample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoCHelper/SolutionRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AoCHelper/SolutionRunner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2uHrhZwMa8XZtumiIq5HeroOPwb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -82,7 +84,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741916460415</updated>
-      <workItem from="1741916461596" duration="4707000" />
+      <workItem from="1741916461596" duration="4843000" />
+      <workItem from="1741953114966" duration="991000" />
     </task>
     <servers />
   </component>

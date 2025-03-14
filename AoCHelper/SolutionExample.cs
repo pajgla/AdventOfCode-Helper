@@ -15,7 +15,7 @@
 
 namespace AoCHelper;
 
-[Solver(2024, 11)]
+[Solver(1999, 7)]
 public class SolutionExampleSolver : BaseSolver<SolutionExample>
 {
     //No need to have anything here
@@ -41,13 +41,6 @@ public class SolutionExample : BaseSolution
         {
             m_Blinks = 75;
         }
-    }
-    
-    //Once your program solves part one, you have to reset your member variables for part 2
-    public override void Reset()
-    {
-        m_ExampleBool = false;
-        m_ExampleMap.Clear();
     }
 
     //Write your solution here and return the output as string
